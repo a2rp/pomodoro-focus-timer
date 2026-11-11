@@ -10,15 +10,15 @@ The page centers a circular countdown with Focus, Short break, and Long break mo
 
 ## Features and use
 
-Choose a timer mode, start or pause the countdown, reset the current mode, or skip to the next mode. Edit the focus and break lengths in minutes. Add focus tasks and check them off. Completed focus sessions increase the session count.
+Choose a timer mode, start or pause the countdown, reset the current mode, or skip to the next mode. Edit the focus and break lengths in minutes. Add focus tasks and check them off. Completed focus sessions increase the session count; every fourth completed focus session leads to a long break.
 
 ## Data and limits
 
-Timer lengths, completed session count, and the focus list are saved in localStorage. The active countdown resets after a page reload. There are no alarms or browser notifications.
+Timer lengths, completed session count, and the focus list are saved in localStorage in this browser and are not synced to another device. The active countdown resets after a page reload. If browser storage is unavailable or full, changes remain available until the page is closed. There are no alarms or browser notifications.
 
 ## Run locally
 
-Use Node.js and npm, then run these commands from the project folder:
+Use Node.js 20.19+ or 22.12+ and npm, then run these commands from the project folder:
 
 ```sh
 npm install
